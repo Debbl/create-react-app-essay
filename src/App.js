@@ -1,8 +1,11 @@
+import {BrowserRouter, Link} from 'react-router-dom';
+import AppRoutes from './router';
 function App() {
   return (
-    <div className="App">
-      <h2>App</h2>
-    </div>
+    <BrowserRouter>
+      <Link to={'about'}>about</Link>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 
